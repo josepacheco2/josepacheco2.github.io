@@ -1,0 +1,382 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h1{
+    color: #038C7F;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.header .iconoo{
+    width: 30px;
+    height: 30%;
+}
+
+/* Barra superior */
+.header {
+    background-color: #0D0D0D;
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+/* Logo y menú */
+.navbar {
+    /*background-color: white;*/
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #ccc;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 200px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    color: #027368;
+    font-weight: bold;
+}
+
+.navbar li a {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    text-decoration: none;
+    color: #d7476f;
+    padding-bottom: 5px; /* Espacio extra para la línea */
+    font-weight: bold;
+}
+
+.navbar li a::after {
+    content: ''; /* Pseudo-elemento vacío para crear la línea */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Por defecto, la línea tiene un ancho de 0 */
+    height: 2px; /* Altura de la línea */
+    background-color: #025951; /* Color de la línea */
+    transition: width 0.3s ease; /* Transición suave para el hover */
+}
+
+.navbar li a:hover::after {
+    width: 100%; /* Expande la línea completamente al hacer hover */
+}
+
+/* Contenido principal */
+.content {
+    max-width: 1200px; /* Limitar el ancho del contenido */
+    margin: 0 auto;    /* Centramos todo el contenido en la página */
+    text-align: center;
+    padding: 50px;
+}
+
+
+.content .article p {   
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+}
+
+.content .article h2{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #070707;
+    margin-bottom: 40px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+#seccion1{
+    max-width: 800px; /* Limitar el ancho del contenido */ 
+    margin: 0 auto;    /* Centramos todo el contenido en la página */
+    text-align: center;  
+}
+/* Grid para los artículos */
+.articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Dos columnas para los artículos */
+    grid-gap: 10PX;  /* Espacio entre los artículos */
+    justify-content: center;  /* Centrar los artículos horizontalmente */
+}
+
+.article {
+    background-color: #025951;
+    /*padding: 2px;*/
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 20PX;
+}
+
+.article h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.article-date span {
+    font-size: 12px;
+}
+
+#submenu{
+    width: 200px;  
+    color: #025951;
+    height: 100vh;
+    padding: 1rem;
+    padding-top: 300px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 999;
+    text-align: center;
+}
+#submenu nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#submenu nav ul li {
+    margin-bottom: 1rem;
+}
+
+#submenu nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 0.5rem;
+    background-color: #025951;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#submenu nav ul li a:hover {
+    background-color: #038C7F;
+}
+
+hr {
+   
+    border-top: 2px solid #025951; /* Línea punteada de 2 píxeles de grosor */
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.banner2 {
+    display: flex; /* Usa Flexbox para la alineación */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    background-color: #025951;
+    color: #ffffff;
+    padding: 5px 10px; /* Añade espacio interno alrededor del contenido */
+}
+
+.banner-image {
+    height: 150px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+}
+
+
+.calculadoramru {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.calculadora {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #706d6d;
+    border-radius: 10px;
+    background-color: #eefffd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario, .resultado {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #034C8C;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #034C8C;
+}
+
+input[type="number"] {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #034C8C;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #048ABF;
+    outline: none;
+
+}
+
+button {
+    width: 60%;
+    padding: 10px;
+    background-color: #034C8C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #03588C;
+}
+
+.resultado {
+    background-color: #028175;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    
+}
+
+.resultado p {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    color: #025951;
+    font-weight: bold;
+    width: 40%;
+    text-align:center;
+    margin: auto;
+}
+
+.banner2 h1{
+    color: white;
+}
+
+.banner2 h2{    
+    color: white;
+}
+
+.resultado h2{
+    color: white;
+    padding: 0%;
+}
+
+.formul h2{
+    font-size: 200%;
+    color: black;
+    padding: 0%;
+}
+
+.formul p{
+    background-color: transparent;
+    color: white;
+    padding: 0%;
+}
+
+
+
+.content .concepts p {
+    color: #070707;
+    margin-bottom: 40px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.concepts h2{
+    color: #025951;
+}
+
+#seccion1 ul li{
+    text-align: justify;
+    font-size: 20px;
+}
+
+#seccion1 .equation p{
+    text-align: center;
+}
+
+.equations h2{
+    color: #025951;
+}
+
+footer{
+    background-color: #0D0D0D;
+    color: white;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .articles {
+        grid-template-columns: 1fr;  /* Una columna para pantallas pequeñas */
+    }
+}

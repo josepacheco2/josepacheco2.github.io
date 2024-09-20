@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRUV</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <!-- Barra superior -->
+    <header class="header">
+        <div class="date">UMG SISTEMAS</div>
+        <div class="ic">
+            <img src="/img/user.png" alt="" class="iconoo">
+         </div>
+    </header>
+
+    <!-- Logo y menú de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/img/LOGO OFICIAL.png" alt="Logo Biblioteca Escolar Digital">
+            <h1> MRU y MRUV</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="/index.html">INICIO</a></li>
+            <li><a href="/mru.html">MRU</a></li>
+            <li><a href="/mruv.html">MRUV</a></li>
+            <li><a href="/ejemplos.html">EJEMPLOS</a></li>
+            <li><a href="/articulos.html">ARTICULOS</a></li>            
+        </ul>
+    </nav>
+    <aside id="submenu">
+        <nav>
+            <ul>
+                <li><a href="#seccion1">CONCEPTO</a></li>
+                <li><a href="#seccion2">CALULADORA MRUV</a></li>       
+            </ul>
+        </nav>
+        
+    </aside>
+
+
+    <main class="content">
+
+        <section id="seccion1">
+
+            <section class="concepts">
+                <h1>Definición del MRUV</h1>
+                <p>
+                    El Movimiento Rectilíneo Uniformemente Variado (MRUV) se caracteriza por el movimiento de un objeto a lo largo de una trayectoria recta con una aceleración constante. Esto significa que el objeto experimenta un cambio uniforme en su velocidad. La aceleración constante implica que la tasa de cambio de la velocidad es constante a lo largo del tiempo.
+                </p>
+                <h2>Conceptos Claves</h2>
+                <ul>
+                    <li><strong>Posición</strong>: Es la ubicación del objeto en un instante dado.</li>
+                    <li><strong>Velocidad</strong>: La velocidad es la tasa de cambio de la posición con respecto al tiempo.</li>
+                    <li><strong>Aceleración</strong>: La aceleración es la tasa de cambio de la velocidad con respecto al tiempo.</li>
+                    <li><strong>Tiempo</strong>: El tiempo es el intervalo durante el cual ocurre el movimiento.</li>
+                </ul>
+            </section>
+
+            <section class="equations">
+                <h2>Ecuaciones del MRUV</h2>
+                <div class="equation">
+                    <h3>Posición Final</h3>
+                    <p>x<sub>f</sub> = x<sub>i</sub> + v<sub>i</sub> · t + <sup>1</sup>&frasl;<sub>2</sub> · a · t<sup>2</sup></p>
+                    <ul>
+                        <li><strong>x<sub>f</sub></strong>: Posición final del objeto en el tiempo t.</li>
+                        <li><strong>x<sub>i</sub></strong>: Posición inicial del objeto.</li>
+                        <li><strong>v<sub>i</sub></strong>: Velocidad inicial del objeto.</li>
+                        <li><strong>a</strong>: Aceleración constante.</li>
+                        <li><strong>t</strong>: Tiempo transcurrido.</li>
+                    </ul>
+                </div>
+
+                <div class="equation">
+                    <h3>Velocidad Final</h3>
+                    <p>v<sub>f</sub> = v<sub>i</sub> + a · t</p>
+                    <ul>
+                        <li><strong>v<sub>f</sub></strong>: Velocidad final del objeto en el tiempo t.</li>
+                        <li><strong>v<sub>i</sub></strong>: Velocidad inicial del objeto.</li>
+                        <li><strong>a</strong>: Aceleración constante.</li>
+                        <li><strong>t</strong>: Tiempo transcurrido.</li>
+                    </ul>
+                </div>
+                <div class="equation">
+                    <h3>Distancia Recorrida</h3>
+                    <p>d = v<sub>i</sub> · t + <sup>1</sup>&frasl;<sub>2</sub> · a · t<sup>2</sup></p>
+                    <ul>
+                        <li><strong>d</strong>: Distancia recorrida por el objeto en el tiempo t.</li>
+                        <li><strong>v<sub>i</sub></strong>: Velocidad inicial del objeto.</li>
+                        <li><strong>a</strong>: Aceleración constante.</li>
+                        <li><strong>t</strong>: Tiempo transcurrido.</li>
+                    </ul>
+                </div>
+                <section class="examples">
+                    <h2>Ejemplos de MRUV</h2>
+                    <ul>
+                        <li><strong>Un automóvil acelerando en una carretera</strong>: Imagina que un automóvil comienza a moverse desde el reposo y acelera constantemente a 2 m/s². Usando las ecuaciones del MRUV, podemos calcular su velocidad después de un cierto tiempo, la distancia que ha recorrido, y su posición final en ese tiempo.</li>
+                        <li><strong>Una pelota lanzada hacia arriba</strong>: Si lanzas una pelota hacia arriba con una velocidad inicial, la aceleración debida a la gravedad será negativa (aceleración hacia abajo). Podemos usar las ecuaciones del MRUV para determinar el tiempo que tarda la pelota en alcanzar su altura máxima, la altura máxima alcanzada, y el tiempo total para volver al suelo.</li>
+                    </ul>
+                </section>
+            </section> 
+        </section>
+        
+        <section id="seccion2">       
+            <div class="banner2">
+                <img src="/img/calc.jpg" alt="Imagen izquierda" class="banner-image imgis">
+                <div class="banner-text">
+                    <h1>CALCULADORA MRUV</h1>
+                    <h2>MOVIMIENTO RECTILÍNEO UNIFORME VARIADO</h2>
+                </div>
+                <img src="/img/calc.jpg" alt="Imagen derecha" class="banner-image imgder">
+            </div>
+
+
+
+
+        </section>   
+        <section class="calculadoramru">
+    
+            <!-- Calcular Posición -->
+            <div class="calculadora">
+                <div class="formulario">
+                    <h2>Calcular Posición</h2>
+                    <div class="input-group">
+                        <label for="velocidad-inicial-posicion">Velocidad Inicial (v₀) (m/s):</label>
+                        <input type="number" id="velocidad-inicial-posicion" placeholder="Ingrese velocidad inicial">
+                    </div>
+                    <div class="input-group">
+                        <label for="aceleracion-posicion">Aceleración (a) (m/s²):</label>
+                        <input type="number" id="aceleracion-posicion" placeholder="Ingrese aceleración">
+                    </div>
+                    <div class="input-group">
+                        <label for="tiempo-posicion">Tiempo (t) (s):</label>
+                        <input type="number" id="tiempo-posicion" placeholder="Ingrese tiempo">
+                    </div>
+                    <button onclick="calcularPosicion()">Calcular Posición</button>
+                </div>
+        
+                <div class="resultado" id="resultado-posicion">
+                    <h2>Resultado:</h2>
+                    <p id="posicion-resultado">-- m</p>
+                    <div class="formul">
+                        <h3><strong> Formula</strong></h3>
+                        <h2> d = Vi.t+1/2.a.t^2</h2>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Calcular Velocidad Final -->
+            <div class="calculadora">
+                <div class="formulario">
+                    <h2>Calcular Velocidad Final</h2>
+                    <div class="input-group">
+                        <label for="velocidad-inicial-velocidad-final">Velocidad Inicial (v₀) (m/s):</label>
+                        <input type="number" id="velocidad-inicial-velocidad-final" placeholder="Ingrese velocidad inicial">
+                    </div>
+                    <div class="input-group">
+                        <label for="aceleracion-velocidad-final">Aceleración (a) (m/s²):</label>
+                        <input type="number" id="aceleracion-velocidad-final" placeholder="Ingrese aceleración">
+                    </div>
+                    <div class="input-group">
+                        <label for="tiempo-velocidad-final">Tiempo (t) (s):</label>
+                        <input type="number" id="tiempo-velocidad-final" placeholder="Ingrese tiempo">
+                    </div>
+                    <button onclick="calcularVelocidadFinal()">Calcular Velocidad Final</button>
+                </div>
+        
+                <div class="resultado" id="resultado-velocidad-final">
+                    <h2>Resultado:</h2>
+                    <p id="velocidad-final-resultado">-- m/s</p>
+                    <div class="formul">
+                        <h3><strong> Formula</strong></h3>
+                        <h2> d = Vi.t+1/2.a.t^2</h2>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Calcular Distancia -->
+            <div class="calculadora">
+                <div class="formulario">
+                    <h2>Calcular Distancia</h2>
+                    <div class="input-group">
+                        <label for="velocidad-inicial-distancia">Velocidad Inicial (v₀) (m/s):</label>
+                        <input type="number" id="velocidad-inicial-distancia" placeholder="Ingrese velocidad inicial">
+                    </div>
+                    <div class="input-group">
+                        <label for="tiempo-distancia">Tiempo (t) (s):</label>
+                        <input type="number" id="tiempo-distancia" placeholder="Ingrese tiempo">
+                    </div>
+                    <div class="input-group">
+                        <label for="aceleracion-distancia">Aceleración (a) (m/s²):</label>
+                        <input type="number" id="aceleracion-distancia" placeholder="Ingrese aceleración">
+                    </div>
+                    <button onclick="calcularDistancia()">Calcular Distancia</button>
+                </div>
+        
+                <div class="resultado" id="resultado-distancia">
+                    <h2>Resultado:</h2>
+                    <p id="distancia-resultado">-- m</p>
+                    <div class="formul">
+                        <h3><strong> Formula</strong></h3>
+                        <h2> d = Vi.t+1/2.a.t^2</h2>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        
+    
+    </main>
+    <footer class="fin">
+        <div><p> Todos los derechos recervados @doket version 19092024<br> Jos Everildo Pacheco Tzaj</p></div>
+       
+    </footer>
+    <script src="/JS/scriptmruv.js"></script>   
+
+</body>
+</html>

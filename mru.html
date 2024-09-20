@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRU</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Barra superior -->
+    <header class="header">
+        <div class="date">UMG SISTEMAS</div>
+        <div class="ic">
+            <img src="/img/user.png" alt="" class="iconoo">
+         </div>
+    </header>
+
+    <!-- Logo y menú de navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/img/LOGO OFICIAL.png" alt="Logo Biblioteca Escolar Digital">
+            <h1> MRU y MRUV</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="/index.html">INICIO</a></li>
+            <li><a href="/mru.html">MRU</a></li>
+            <li><a href="/mruv.html">MRUV</a></li>
+            <li><a href="/ejemplos.html">EJEMPLOS</a></li>
+            <li><a href="/articulos.html">ARTICULOS</a></li>            
+        </ul>
+    </nav>
+
+    <aside id="submenu">
+        <nav>
+            <ul>
+                <li><a href="#seccion1">CONCEPTO</a></li>
+                <li><a href="#seccion2">CALULADORA MRU</a></li>       
+            </ul>
+        </nav>
+        
+    </aside>
+
+
+    <main class="content">
+
+        <section id="seccion1">
+
+            <h1>Movimiento Rectilíneo Uniforme</h1>
+
+            <p>Como su nombre lo indica, el movimiento rectilíneo se da cuando  un objeto se desplaza en línea recta y
+                 en un sola dirección, como un cohete. Pero entonces,  ¿en qué momento pasa de ser un movimiento rectilíneo normal
+                  a un movimiento rectilíneo uniforme? </p>
+        
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VMt2tdhVuUo?" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            
+            <p>En física, la palabra uniforme está relacionada con el movimiento de un objeto cuya velocidad es 
+                constante, es decir, que no tiene variaciones. Y si a eso le sumas las palabras movimiento rectilíneo,
+                sabrás que se trata de un objeto que además de desplazarse en línea recta hacia una sola dirección,
+                lo hace siempre a la misma velocidad, no hay momentos en los que su aceleración aumente o disminuya.
+        </section>
+        
+        <section id="seccion2">
+           
+            <div class="banner2">
+                <img src="/img/calc.jpg" alt="Imagen izquierda" class="banner-image imgis">
+                <div class="banner-text">
+                    <h1>CALCULADORA MRU</h1>
+                    <h2>MOVIMIENTO RECTILÍNEO UNIFORME</h2>
+                </div>
+                <img src="/img/calc.jpg" alt="Imagen derecha" class="banner-image imgder">
+            </div>
+
+            
+        </section>
+
+        <section class="calculadoramru">
+            <div class="calculadora">
+                <div class="formulario">
+                    <h2>Calcular Distancia</h2>
+                    <label for="velocidad">Velocidad (m/s):</label>
+                    <input type="number" id="velocidad" placeholder="Ingrese velocidad">
+                    <label for="tiempo">Tiempo (s):</label>
+                    <input type="number" id="tiempo" placeholder="Ingrese tiempo">
+                    <button onclick="calcularDistancia()">Calcular Distancia</button>
+                </div>
+        
+                <div class="resultado" id="resultado-distancia">
+                    <h2>Resultado:</h2>
+                    <p id="distancia">Distancia: -- m</p>
+                    <div class="formul">
+                        <h3><strong> Formula</strong></h3>
+                        <h2> d = v * t</h2>
+                        <h4><strong>VARIABLE DE LA FORMULA </strong></h4>
+                        <P>
+                            d = distancia <br>
+                            v = velocidad <br>
+                            t = tiempo <br>
+                        </P>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="calculadora">
+                <div class="formulario">
+                    <h2>Calcular Velocidad</h2>
+                    <label for="distancia-velocidad">Distancia (m):</label>
+                    <input type="number" id="distancia-velocidad" placeholder="Ingrese distancia">
+                    <label for="tiempo-velocidad">Tiempo (s):</label>
+                    <input type="number" id="tiempo-velocidad" placeholder="Ingrese tiempo">
+                    <button onclick="calcularVelocidad()">Calcular Velocidad</button>
+                </div>
+        
+                <div class="resultado" id="resultado-velocidad">
+                    <h2>Resultado:</h2>
+                    <p id="velocidad-resultado">Velocidad: -- m/s</p>
+                    <div class="formul">
+                        <h3><strong> Formula</strong></h3>
+                        <h2> v = d ÷ t</h2>
+                        <h4><strong>VARIABLE DE LA FORMULA </strong></h4>
+                        <P>
+                            d = distancia <br>
+                            v = velocidad <br>
+                            t = tiempo <br>
+                        </P>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="calculadora">
+                <div class="formulario">
+                    <h2>Calcular Tiempo</h2>
+                    <label for="distancia-tiempo">Distancia (m):</label>
+                    <input type="number" id="distancia-tiempo" placeholder="Ingrese distancia">
+                    <label for="velocidad-tiempo">Velocidad (m/s):</label>
+                    <input type="number" id="velocidad-tiempo" placeholder="Ingrese velocidad">
+                    <button onclick="calcularTiempo()">Calcular Tiempo</button>
+                </div>
+        
+                <div class="resultado" id="resultado-tiempo">
+                    <h2>Resultado:</h2>
+                    <p id="tiempo-resultado">Tiempo: -- s</p>
+                    <div class="formul">
+                        <h3><strong> Formula</strong></h3>
+                        <h2> t = d ÷ v</h2>
+                        <h4><strong>VARIABLE DE LA FORMULA </strong></h4>
+                        <P>
+                            d = distancia <br>
+                            v = velocidad <br>
+                            t = tiempo <br>
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="fin">
+        <div><p> Todos los derechos recervados @doket version 19092024<br> Jos Everildo Pacheco Tzaj</p></div>
+       
+    </footer>
+    <script src="/JS/script.js"></script>
+
+
+</body>
+</html>
